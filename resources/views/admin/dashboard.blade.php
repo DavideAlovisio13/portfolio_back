@@ -2,6 +2,12 @@
 
 @section('content')
 <div class="container">
+    @foreach ($projects as $item)
+        <ul>
+            <li>{{ $item->name }}</li>
+            <li>{{ $item->description }}</li>
+        </ul>
+    @endforeach
     <h2 class="fs-4 text-secondary my-4">
         {{ __('Dashboard') }}
     </h2>
