@@ -289,7 +289,7 @@ h1 {
         text-align: center;
         font-weight: 900;
         font-size: 30px;
-        color: rgb(16, 137, 211);
+        color: #00894d;
     }
 
     .form {
@@ -317,7 +317,7 @@ h1 {
 
     .form .input:focus {
         outline: none;
-        border-inline: 2px solid #12b1d1;
+        border-inline: 2px solid #00894d;
     }
 
     .form .forgot-password {
@@ -336,16 +336,17 @@ h1 {
         display: block;
         width: 100%;
         font-weight: bold;
+        background: rgb(255, 255, 255);
         background: linear-gradient(
-            45deg,
-            rgb(16, 137, 211) 0%,
-            rgb(18, 177, 209) 100%
+            202deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(132, 164, 115, 1) 32%
         );
         color: white;
         padding-block: 15px;
         margin: 20px auto;
         border-radius: 20px;
-        box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 20px 10px -15px;
+        box-shadow: #00894d 0px 20px 10px -15px;
         border: none;
         transition: all 0.2s ease-in-out;
     }
