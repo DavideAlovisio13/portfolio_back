@@ -91,7 +91,7 @@
             <div class="sidebar debug">
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="">{{ __('Projects') }}</a>
+                        <a class="nav-link active" aria-current="page" href="{{ route('admin.projects.index') }}">{{ __('Projects') }}</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Link</a>
