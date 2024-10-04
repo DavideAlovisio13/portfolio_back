@@ -9,4 +9,5 @@
             </li>
         </ul>
     @endforeach
+    <a href="{{ route('admin.projects.create') }}" class="btn btn-primary"> create new </a>
 @endsection
