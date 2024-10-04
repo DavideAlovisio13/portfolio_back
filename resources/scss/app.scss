@@ -9,8 +9,8 @@ $fa-font-path: "../fonts/webfonts" !default;
 
 @import "~bootstrap/scss/bootstrap";
 
-h1 {
-    color: $text-color;
+#app {
+    background-color: $color3;
 }
 
 #home {
@@ -425,8 +425,12 @@ h1 {
 
 .title_link {
     display: block;
-    color: #00894d;
+    color: $color1;
     font-weight: 900;
     font-size: 1.3rem;
     list-style: none;
+}
+
+.debug {
+    border: red 2px solid;
 }

@@ -22,7 +22,7 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 //middleware: una funzionalità che si pongono in mezzo tra la tua login e la risorsa da andare a prendere
 Route::middleware(['auth', 'verified'])->name('admin.')->prefix('admin')->group(function () {
     Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
-    Route::get('/projects', [ProjectController::class, 'index'])->name('projects.index');
+    Route::get('/projects', [ProjectController::class, 'index'])->name('projects');
 });
 
 // group: raggruppa tutte le rotte che posso avere qualcosa in comune

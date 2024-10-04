@@ -87,10 +87,27 @@
                 </div>
             </div>
         </nav>
-
-        <main class="">
-            @yield('content')
-        </main>
+        <div class="d-flex h-100">
+            <div class="sidebar debug">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="dropdown-item" href="{{ route('') }}">{{ __('Projects') }}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+            <main class="debug">
+                @yield('content')
+            </main>
+        </div>
     </div>
 </body>
 

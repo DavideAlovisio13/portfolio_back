@@ -5,6 +5,7 @@
             <div>
                 <h1 class="title">Davide Alovisio
                 </h1>
+                
             </div>
         </div>
         <div class="right d-flex align-items-center justify-content-center w-50">
