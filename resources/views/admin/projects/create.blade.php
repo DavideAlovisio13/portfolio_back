@@ -3,7 +3,7 @@
 @section('content')
     <div class="container" id="create">
         <h2>Create New Project</h2>
-        <form action="{{ route('admin.projects.store') }}" method="POST" enctype="multipart/form-data" novalidate>
+        <form action="{{ route('admin.projects.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="form-group">
                 <label for="title">Title</label>
@@ -18,14 +18,6 @@
                 <textarea name="description" id="description" class="form-control @error('description') is-invalid @enderror"
                     placeholder="Project description" required>{{ old('description') }}</textarea>
                 @error('description')
-                    <div class="alert alert-danger">{{ $message }}</div>
-                @enderror
-            </div>
-            <div class="form-group">
-                <label for="image">Image</label>
-                <input type="file" name="image" id="image"
-                    class="form-control @error('image') is-invalid @enderror" required>
-                @error('image')
                     <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
             </div>
